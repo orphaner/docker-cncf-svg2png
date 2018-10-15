@@ -9,5 +9,6 @@ WORKDIR /cncf
 VOLUME ["/png"]
 
 ADD convert.sh /cncf/
+RUN chmod +x /cncf/convert.sh
 
 ENTRYPOINT ["/cncf/convert.sh"]
