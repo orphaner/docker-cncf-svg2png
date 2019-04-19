@@ -1,7 +1,7 @@
 pipeline:
   build:
     image: plugins/docker
-    repo: docker-http-server
+    repo: nicolaznk/cncf-svg2png
     tags: 
       - 1.0.0
       - 1.0
