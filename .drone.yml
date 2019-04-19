@@ -1,7 +1,11 @@
 pipeline:
   build:
     image: plugins/docker
-    repo: nicolaznk/cncf-svg2png
+    repo: nicolaznk/cncf-svg2png-drone
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
     tags: 
       - 1.0.0
       - 1.0
